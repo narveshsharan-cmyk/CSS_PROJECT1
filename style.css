@@ -1,0 +1,153 @@
+@import url(utils.css);
+:root{
+    --primary-color: #ffffff;
+    --text-color: #2e2e2e;
+    --font-family: 'Arial', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* header section */
+header{
+    border-bottom: 1px solid rgba(248, 229, 237, 0.778);
+    background-color: azure 0;
+    position: fixed;
+    width: 100%;
+    
+}
+.header-overlay{
+    padding: 30px 50px;
+    width: 90%;
+    
+}
+nav>ul{
+    list-style: none;
+    gap:30px;
+    font-size: 20px;
+    a{
+        text-decoration: none;
+       color: #2e2e2e;
+    }
+    
+
+}
+.header-overlay>ul{
+    font-size: 20px;
+    gap:20px;
+    list-style: none;
+    a{
+        color:var(--text-color);
+        
+    }
+}
+.bar{
+    display: none;
+}
+/* hero section*/
+.hero{
+    background-image: url("https://htmldemo.net/destry/destry/assets/images/slider/slide-1.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-overlay{
+    display: flex;
+    flex-direction: column;
+    padding:0px 30px ;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    gap:20px;
+
+}
+.btn-primary{
+    height:40px ;
+    width:150px ;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #2e2e2e;
+    color: #ffffff;
+
+
+}
+.hero-overlay{
+    h1{
+        font-size:50px ;
+ }
+    p{
+        font-size: 20px;
+        color:lightcoral;
+ }
+}
+@media (max-width:1186px){
+    .nav-links{
+        display:none;
+    }
+    .nav-cart{
+        display:none;
+    }
+    .bar{
+        display: block;
+    }
+}
+.card1{
+    background-color: #f8e7e7;
+
+    
+}
+.grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 7px;
+    margin: auto;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.img1{
+    grid-column:1/2;
+    grid-row: 1/3;
+    object-fit: cover;
+    object-position: center;
+    padding-left: 10px;
+    position: relative;
+}
+.img2{
+    
+    grid-column: 2/3;
+    grid-row: 1/2;
+    object-fit: cover;
+}
+.img3{
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+      object-fit: cover;
+}
+span {
+    font-size: large;
+  grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #0c0c0c;
+  text-align: center;
+  background: rgba(138, 116, 116, 0.3);
+  padding: 10px;
+}
+
+    
+
